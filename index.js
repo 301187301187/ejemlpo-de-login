@@ -1,6 +1,14 @@
-function validar(){
-    alert($("#user").val());
+var bandera =false;
 
-    var pass =document.getElementById("password").value;
-    alert(pass);
+function validar(){
+    if (bandera){
+        console.log("Validacion completa;")
+        //redireccion ala pagina correspondiente
+    }
+
+}
+
+function correctCaptcha(){
+    console.log("Captcha resuelte correctamente")
+    bandera = true;
 }
